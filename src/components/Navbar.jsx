@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { FiMenu, FiX, FiGithub, FiLinkedin, FiSun, FiMoon } from 'react-icons/fi'
+import { FiMenu, FiX, FiSun, FiMoon } from 'react-icons/fi'
 
 const links = [
     { label: 'About', id: 'about' },
@@ -120,9 +120,6 @@ export default function Navbar() {
                             >
                                 {theme === 'dark' ? <FiSun size={18} /> : <FiMoon size={18} />}
                             </button>
-
-                            <a href="https://github.com/anupam-dwivedi" target="_blank" rel="noreferrer" style={{ color: 'rgba(255,255,255,0.6)', padding: '8px', transition: 'all 0.2s', display: 'flex', borderRadius: '50%' }} onMouseEnter={e => { e.currentTarget.style.color = '#fff'; e.currentTarget.style.background = 'rgba(255,255,255,0.1)'; }} onMouseLeave={e => { e.currentTarget.style.color = 'rgba(255,255,255,0.6)'; e.currentTarget.style.background = 'transparent'; }} aria-label="Github"><FiGithub size={20} /></a>
-                            <a href="https://www.linkedin.com/in/anupamdwivedi027" target="_blank" rel="noreferrer" style={{ color: 'rgba(255,255,255,0.6)', padding: '8px', transition: 'all 0.2s', display: 'flex', borderRadius: '50%', marginRight: 4 }} onMouseEnter={e => { e.currentTarget.style.color = '#fff'; e.currentTarget.style.background = 'rgba(255,255,255,0.1)'; }} onMouseLeave={e => { e.currentTarget.style.color = 'rgba(255,255,255,0.6)'; e.currentTarget.style.background = 'transparent'; }} aria-label="LinkedIn"><FiLinkedin size={20} /></a>
                         </>
                     )}
 
@@ -192,8 +189,6 @@ export default function Navbar() {
                             >
                                 {theme === 'dark' ? <FiSun size={20} /> : <FiMoon size={20} />}
                             </button>
-                            <a href="https://github.com/agusto027" target="_blank" rel="noreferrer" style={{ color: 'rgba(255,255,255,0.8)', padding: 16, background: 'var(--surface-2)', borderRadius: '50%' }}><FiGithub size={20} /></a>
-                            <a href="https://www.linkedin.com/in/anupamdwivedi027" target="_blank" rel="noreferrer" style={{ color: 'rgba(255,255,255,0.8)', padding: 16, background: 'var(--surface-2)', borderRadius: '50%' }}><FiLinkedin size={20} /></a>
                         </motion.div>
                     </motion.div>
                 )}
