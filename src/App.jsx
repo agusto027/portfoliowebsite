@@ -54,15 +54,7 @@ export default function App() {
             transition={{ delay: 2, type: 'spring', stiffness: 200, damping: 20 }}
             whileHover={{ scale: 1.1, boxShadow: '0 0 24px rgba(96,165,250,0.4)', y: -4 }}
             whileTap={{ scale: 0.95 }}
-            style={{
-              position: 'fixed', bottom: 32, right: 32, zIndex: 90,
-              width: 56, height: 56, borderRadius: '50%',
-              background: 'linear-gradient(135deg, var(--accent) 0%, var(--cyan) 100%)',
-              color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center',
-              boxShadow: '0 8px 32px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.1) inset',
-              textDecoration: 'none',
-              cursor: 'pointer',
-            }}
+            className="floating-contact-btn"
             aria-label="Contact via Email"
           >
             <FiMail size={24} />
